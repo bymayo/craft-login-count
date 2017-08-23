@@ -1,0 +1,24 @@
+{#
+/**
+ * Login Count plugin for Craft CMS
+ *
+ * LoginCountFieldType HTML
+ *
+ * @author    Jason Mayo
+ * @copyright Copyright (c) 2017 Jason Mayo
+ * @link      bymayo.co.uk
+ * @package   LoginCount
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    id: id ~ 'someField',
+    class: 'nicetext',
+    name: name ~ '[someField]',
+    value: values.someField,
+    errors: values.getErrors('someField'),
+    required: false,
+}) }}
