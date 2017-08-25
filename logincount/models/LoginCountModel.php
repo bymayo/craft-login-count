@@ -1,23 +1,18 @@
 <?php
 /**
- * Login Count plugin for Craft CMS
+ *  Login Count plugin for Craft CMS
  *
- * LoginCount Model
- *
- * @author    Jason Mayo
- * @copyright Copyright (c) 2017 Jason Mayo
- * @link      bymayo.co.uk
- * @package   LoginCount
- * @since     1.0.0
+ * @author		Jason Mayo
+ * @copyright 	Copyright (c) 2017 Jason Mayo
+ * @twitter 		@madebymayo
+ * @package   	LoginCount
  */
 
 namespace Craft;
 
 class LoginCountModel extends BaseModel
 {
-    /**
-     * @return array
-     */
+
     protected function defineAttributes()
     {
         return array_merge(parent::defineAttributes(), array(

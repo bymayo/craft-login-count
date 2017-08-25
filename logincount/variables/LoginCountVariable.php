@@ -1,14 +1,11 @@
 <?php
 /**
- * Login Count plugin for Craft CMS
+ *  Login Count plugin for Craft CMS
  *
- * Login Count Variable
- *
- * @author    Jason Mayo
- * @copyright Copyright (c) 2017 Jason Mayo
- * @link      bymayo.co.uk
- * @package   LoginCount
- * @since     1.0.0
+ * @author		Jason Mayo
+ * @copyright 	Copyright (c) 2017 Jason Mayo
+ * @twitter 		@madebymayo
+ * @package   	LoginCount
  */
 
 namespace Craft;

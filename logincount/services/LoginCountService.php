@@ -1,14 +1,11 @@
 <?php
 /**
- * Login Count plugin for Craft CMS
+ *  Login Count plugin for Craft CMS
  *
- * LoginCount Service
- *
- * @author    Jason Mayo
- * @copyright Copyright (c) 2017 Jason Mayo
- * @link      bymayo.co.uk
- * @package   LoginCount
- * @since     1.0.0
+ * @author		Jason Mayo
+ * @copyright 	Copyright (c) 2017 Jason Mayo
+ * @twitter 		@madebymayo
+ * @package   	LoginCount
  */
 
 namespace Craft;
@@ -29,16 +26,16 @@ class LoginCountService extends BaseApplicationComponent
 		$criteria->limit = 1;
 		
 		$user = $criteria->find()[0];
+		$controlPanel = strpos(craft()->request->getUrlReferrer(), craft()->config->get('cpTrigger'));
 		
 		if ($user) {
-			$this->saveCount($user);
-		}
-		
-		/*
-			if ($user->accessCp) {
-				
+			if ($user->can('accessCp') && $this->getSetting('accessCp') && $controlPanel) {
+				$this->saveCount($user);
 			}
-		*/
+			else if (!$user->can('accessCp') || $user->can('accessCp') && !$controlPanel) {
+				$this->saveCount($user);
+			}
+		}
 
 		return true;
 		

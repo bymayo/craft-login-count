@@ -1,21 +1,4 @@
-{#
-/**
- * Login Count plugin for Craft CMS
- *
- * Login Count Settings.twig
- *
- * @author    Jason Mayo
- * @copyright Copyright (c) 2017 Jason Mayo
- * @link      bymayo.co.uk
- * @package   LoginCount
- * @since     1.0.0
- */
-#}
-
 {% import "_includes/forms" as forms %}
-
-{% includeCssResource "logincount/css/LoginCount_Style.css" %}
-{% includeJsResource "logincount/js/LoginCount_Script.js" %}
 
 {{ forms.textField(
 		{
@@ -29,20 +12,20 @@
 }}
 
 {{ forms.selectField({
-    label: 'Track Users with CP access',
-    instructions: "Don't count logins if the user has access to the CP",
-    id: 'trackAccessCp',
-    name: 'trackAccessCp', 
-    value: settings['trackAccessCp'],
-			options: [
-			    {
-				    label: 'Yes',   
-				    value: true
-			    },
-			    {
-				    label: 'No',   
-				    value: false
-			    }
-			]
+    label: 'Count Control Panel logins',
+    instructions: "Count logins via CP as well as via front end templates",
+    id: 'accessCp',
+    name: 'accessCp', 
+    value: settings['accessCp'],
+	options: [
+	    {
+		    label: 'Yes',   
+		    value: true
+	    },
+	    {
+		    label: 'No',   
+		    value: false
+	    }
+	]
     })
 }}
