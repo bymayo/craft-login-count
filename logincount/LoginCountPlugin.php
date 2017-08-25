@@ -45,12 +45,12 @@ class LoginCountPlugin extends BasePlugin
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/bymayo/logincount/blob/master/README.md';
+        return 'https://github.com/madebyshape/login-count/blob/master/README.md';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/bymayo/logincount/master/releases.json';
+        return 'https://raw.githubusercontent.com/madebyshape/login-count/master/releases.json';
     }
 
     public function getVersion()
@@ -70,7 +70,7 @@ class LoginCountPlugin extends BasePlugin
 
     public function getDeveloperUrl()
     {
-        return 'bymayo.co.uk';
+        return 'http://bymayo.co.uk';
     }
 
     public function hasCpSection()

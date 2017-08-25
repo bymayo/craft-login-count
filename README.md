@@ -1,3 +1,5 @@
+<img src="https://github.com/madebyshape/login-count/raw/master/screenshots/icon.png" width="50">
+
 # Login Count
 
 Login Count is a Craft CMS plugin that allows you to track how many times your users have logged in. 
@@ -36,3 +38,7 @@ Both methods need to have a user object passed to it, such as `currentUser`
 ## Roadmap
 
 - Extend the User view to show counts in the table view
+
+## Credits
+
+Password by Adnen Kadri from the Noun Project (https://thenounproject.com/adnen.kadri/)
