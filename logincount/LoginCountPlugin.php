@@ -45,12 +45,12 @@ class LoginCountPlugin extends BasePlugin
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/madebyshape/login-count/blob/master/README.md';
+        return 'https://github.com/bymayo/login-count/blob/master/README.md';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/madebyshape/login-count/master/releases.json';
+        return 'https://raw.githubusercontent.com/bymayo/login-count/master/releases.json';
     }
 
     public function getVersion()

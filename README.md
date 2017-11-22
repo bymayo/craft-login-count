@@ -1,4 +1,4 @@
-<img src="https://github.com/madebyshape/login-count/raw/master/screenshots/icon.png" width="50">
+<img src="https://github.com/bymayo/login-count/raw/master/screenshots/icon.png" width="50">
 
 # Login Count
 
