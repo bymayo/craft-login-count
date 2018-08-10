@@ -1,6 +1,8 @@
+> ⚠️ This repo is not under active development and will not be moved to Craft 3.x. ⚠️
+
 <img src="https://github.com/bymayo/login-count/raw/master/screenshots/icon.png" width="50">
 
-# Login Count
+# Login Count for Craft 2.x
 
 Login Count is a Craft CMS plugin that allows you to track how many times your users have logged in. 
 
